@@ -17,7 +17,7 @@ jobs:
 #    - name: Build the Docker image
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Get sentinel dashboard
-      run: curl -LJO https://github.com/alibaba/Sentinel/releases/download/1.8.2/sentinel-dashboard-1.8.2.jar -o sentinel-dashboard.jar
+      run: curl -o sentinel-dashboard.jar -LJO https://github.com/alibaba/Sentinel/releases/download/1.8.2/sentinel-dashboard-1.8.2.jar
     - name: ls
       run: ls -an
     - name: Set up QEMU
